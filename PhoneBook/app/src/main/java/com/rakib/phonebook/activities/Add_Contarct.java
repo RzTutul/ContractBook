@@ -1,4 +1,4 @@
-package com.rakib.phonebook;
+package com.rakib.phonebook.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.rakib.phonebook.db.ContractDatabse;
+import com.rakib.phonebook.R;
+import com.rakib.phonebook.entities.ContractPojo;
 
 public class Add_Contarct extends AppCompatActivity {
 

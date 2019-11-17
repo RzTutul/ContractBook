@@ -1,4 +1,4 @@
-package com.rakib.phonebook;
+package com.rakib.phonebook.entities;
 
 import androidx.room.Entity;
 import androidx.room.Ignore;

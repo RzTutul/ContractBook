@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Add_Contarct">
+    tools:context=".activities.Add_Contarct">
 
     <TextView
         android:gravity="center"

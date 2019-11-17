@@ -1,10 +1,8 @@
-package com.rakib.phonebook;
+package com.rakib.phonebook.adapter;
 
-import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +13,12 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.rakib.phonebook.db.ContractDatabse;
+import com.rakib.phonebook.R;
+import com.rakib.phonebook.activities.Add_Contarct;
+import com.rakib.phonebook.activities.MainActivity;
+import com.rakib.phonebook.entities.ContractPojo;
 
 import java.util.List;
 
@@ -79,7 +83,7 @@ public class ContractAdapterRV extends RecyclerView.Adapter<ContractAdapterRV.Co
                     public void onClick(View v) {
                         ContractPojo myTodo = contractPojos.get(position);
                         int id = myTodo.getId();
-                        Intent intent = new Intent(context,Add_Contarct.class);
+                        Intent intent = new Intent(context, Add_Contarct.class);
                         intent.putExtra("id", id);
                         context.startActivity(intent);
 
@@ -91,7 +95,7 @@ public class ContractAdapterRV extends RecyclerView.Adapter<ContractAdapterRV.Co
 
                         ContractPojo contract = contractPojos.get(position);
                         ContractDatabse.getInstance(context).getContratDao().DeleteContract(contract);
-                        Intent intent = new Intent(context,MainActivity.class);
+                        Intent intent = new Intent(context, MainActivity.class);
                         context.startActivity(intent);
 
                     }

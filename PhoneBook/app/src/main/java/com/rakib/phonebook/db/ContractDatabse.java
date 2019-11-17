@@ -1,11 +1,13 @@
-package com.rakib.phonebook;
+package com.rakib.phonebook.db;
 
 import android.content.Context;
 
 import androidx.room.Database;
-import androidx.room.Entity;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
+import com.rakib.phonebook.daos.ContractDao;
+import com.rakib.phonebook.entities.ContractPojo;
 
 @Database(entities = {ContractPojo.class},version = 1)
 public abstract class ContractDatabse extends RoomDatabase {

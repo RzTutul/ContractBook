@@ -1,4 +1,4 @@
-package com.rakib.phonebook;
+package com.rakib.phonebook.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,7 +8,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.ArrayList;
+import com.rakib.phonebook.adapter.ContractAdapterRV;
+import com.rakib.phonebook.db.ContractDatabse;
+import com.rakib.phonebook.R;
+import com.rakib.phonebook.entities.ContractPojo;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {

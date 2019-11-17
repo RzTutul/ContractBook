@@ -1,10 +1,12 @@
-package com.rakib.phonebook;
+package com.rakib.phonebook.daos;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.rakib.phonebook.entities.ContractPojo;
 
 import java.util.List;
 
